@@ -1,4 +1,9 @@
 import React from "react";
 import ReactDom from "react-dom";
-const element = <h1>Hello world</h1>;
-ReactDom.render(element, document.getElementById('root'));
+import Myfunc from "./components/Myfunc"
+
+// import { hot } from 'react-hot-loader/root';
+// const App = () => <div>Hello World!</div>;
+// export default hot(App);
+
+ReactDom.render(<Myfunc />, document.getElementById("root"));
