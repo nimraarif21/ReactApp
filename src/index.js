@@ -1,7 +1,23 @@
 import React from "react";
 import ReactDom from "react-dom";
-import SignUp from "./components/SignUp"
+import Home from './components/Home/Home'
+import {Provider} from 'react-redux'
+import store from './store'
 
 
+class App extends React.Component{
 
-ReactDom.render(<SignUp />, document.getElementById("root"));
+
+ render(){
+
+        (
+       <Provider store={store}>
+           <Home />
+       </Provider>
+        )  
+   }
+}
+
+
+ReactDom.render(<App />, document.getElementById("root"));
+
