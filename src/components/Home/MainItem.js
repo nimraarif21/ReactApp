@@ -17,7 +17,7 @@ class MainItem extends React.Component{
          rating: 3,
          color:'yellow',
          prevRating:0,
-         prevcolor:'gray'
+         prevcolor:'blue'
         
        };
      }
